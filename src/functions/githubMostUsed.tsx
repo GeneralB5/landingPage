@@ -1,3 +1,4 @@
+import ordenarFechasPorReciente from "./ordernarFechas"
 
 interface languages {
     name:string
@@ -11,6 +12,7 @@ const mostUsed = (arry:any)=>{
     const arryLanguagesNumb:number[] = []
     if(!Array.isArray(arry)) return arryLanguages
     const arrayThreeLatestProy:any[] = []
+    ordenarFechasPorReciente(arry)
     arry.map(({name,html_url,updated_at,language}:languages)=>{
         if(!language) return 
         if(arrayThreeLatestProy.length != 3) arrayThreeLatestProy.push({name,language: language.toLocaleLowerCase() =="c#" ? "cSharp":language, html_url, updated_at})
