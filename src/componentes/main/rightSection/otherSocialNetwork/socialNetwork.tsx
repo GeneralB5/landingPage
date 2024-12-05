@@ -1,6 +1,7 @@
 import gmail from "../../../../assets/iconos_social_net/gmail.png"
 import insta from "../../../../assets/iconos_social_net/instagram.png"
-function OtherSocialNetwork(){
+
+export default function OtherSocialNetwork(){
     return(
         <div className="themedDivs" style={{height:150,width:320,backgroundColor:'#8D86C9',flexDirection:"column",justifyContent:'space-evenly'}}>
                     <h2 style={{fontSize:17,textTransform:'uppercase'}}>other ways to communicate</h2>
@@ -15,4 +16,3 @@ function OtherSocialNetwork(){
                 </div>
     )
 }
-export default OtherSocialNetwork
