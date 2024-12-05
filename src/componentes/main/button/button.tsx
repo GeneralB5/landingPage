@@ -2,10 +2,10 @@ import { useRef, useState } from "react"
 import CV from "../../../assets/CV/CV.pdf"
 function ButtonDownload() {
   const [animation,setAnimation] = useState(false);
-  const downloadLink = useRef(null);
+  const downloadLink = useRef<HTMLAnchorElement>(null);
   const handleClikc=():void=>{  
-    setAnimation(true);
-    downloadLink.current.click()
+    setAnimation(true);    
+      downloadLink.current?.click()    
     setTimeout(()=>{setAnimation(false)},2000);
   };
     return(

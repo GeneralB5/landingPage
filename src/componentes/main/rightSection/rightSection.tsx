@@ -3,14 +3,13 @@ import DivFutProy from "./futureProy/divFutProy"
 import OtherSocialNetwork from "./otherSocialNetwork/socialNetwork"
 import ThreeNewest from "./threeNewest/MostNewest"
 interface RightSectionArg{
-    user:object,
     chartData:{
         arrayThreeLatestProy:any[]
         arryLanguages:string[]
         arryLanguagesNumb:number[]
     }
 }
-function RightSection({ user,chartData }:RightSectionArg) {
+function RightSection({chartData}:RightSectionArg) {
     
     return(
         <section className="sectionRight">

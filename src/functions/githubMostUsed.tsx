@@ -6,11 +6,16 @@ interface languages {
     updated_at:string
     language:string
 }
+interface chartDataArguments{
+    arrayThreeLatestProy:any[]
+    arryLanguages:string[]
+    arryLanguagesNumb:number[]
+}
 
-const mostUsed = (arry:any)=>{
+const mostUsed = (arry:any):chartDataArguments | null=>{
     const arryLanguages:string[] = []
     const arryLanguagesNumb:number[] = []
-    if(!Array.isArray(arry)) return arryLanguages
+    if(!Array.isArray(arry)) return null
     const arrayThreeLatestProy:any[] = []
     ordenarFechasPorReciente(arry)
     arry.map(({name,html_url,updated_at,language}:languages)=>{
@@ -24,6 +29,6 @@ const mostUsed = (arry:any)=>{
         }
 
     })
-    return {arryLanguages,arryLanguagesNumb,arrayThreeLatestProy}
+    return {arrayThreeLatestProy,arryLanguages,arryLanguagesNumb}
 }
 export default mostUsed

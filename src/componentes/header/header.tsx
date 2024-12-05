@@ -8,7 +8,9 @@ function Header() {
                 <img src={img} alt="" />
                 <h2>Ian Bonfiglio</h2>
             </div>
-            <img className="RocketIMG" src={spaceship} alt="" height={90} width={120} />
+            <div style={{width:170}} className="DivHeaderInside">
+                <img className="RocketIMG" src={spaceship} alt="" height={90} width={120} />
+            </div>
         </header>
     )
 }
