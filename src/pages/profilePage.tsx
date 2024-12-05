@@ -5,7 +5,6 @@ import RightSection from "../componentes/main/rightSection/rightSection.tsx"
 import mostUsed from "../functions/githubMostUsed.tsx"
 import LoadingDots from "../componentes/loading/loading.tsx"
 import H1Principal from "../componentes/main/h1Principal/h1Principla.tsx"
-
 interface chartDataArguments{
     arrayThreeLatestProy:any[]
     arryLanguages:string[]
