@@ -631,13 +631,13 @@ transition: all 0.25s ease-out;
   flex-direction: column;
  }
  .H1estatico{  
-  font-size: 30px;
+  font-size: 23px;
 }
 .PH1estatico{  
-  font-size: 30px;
+  font-size: 23px;
 }
 .staticDivH1 {
-  transform: translateY(-20px) translateX(175px);
+  transform: translateY(-15px) translateX(138px);
 }
 .sectionRight{
   flex-direction: column;
@@ -653,4 +653,10 @@ transition: all 0.25s ease-out;
 footer h3{
   font-size: 10px;
 }
+}
+
+/* dark mode */
+
+@media (prefers-color-scheme: dark) {
+  
 }

@@ -5,7 +5,7 @@ interface LayoutProps{
     children:React.ReactNode;
 }
 
-const Layout:React.FC<LayoutProps> = ({children})=>{
+export const Layout:React.FC<LayoutProps> = ({children})=>{
     return(<>
         <Header />
         <main>
@@ -15,4 +15,3 @@ const Layout:React.FC<LayoutProps> = ({children})=>{
         </>
     )
 }
-export default Layout

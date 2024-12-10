@@ -1,7 +1,7 @@
-import img from "../../assets/Icono_space/icons8-space-invaders-48.png"
 import spaceship from "../../assets/spaceship/pngegg.png"
+import img from "../../assets/Icono_space/icons8-space-invaders-48.png"
 
-function Header() {
+export default function Header() {
     return(
         <header>
             <div className="DivHeaderInside">
@@ -14,4 +14,3 @@ function Header() {
         </header>
     )
 }
-export default Header
