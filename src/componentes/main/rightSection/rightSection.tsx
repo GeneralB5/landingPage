@@ -1,20 +1,18 @@
-import PieChart from "../pieChart/pieChart"
 import DivFutProy from "./futureProy/divFutProy"
 import OtherSocialNetwork from "./otherSocialNetwork/socialNetwork"
+import SectionSkill from "./sectionSkills/SectionSkills"
 import ThreeNewest from "./threeNewest/MostNewest"
 interface RightSectionArg{
     chartData:{
         arrayThreeLatestProy:any[]
         arryLanguages:string[]
-        arryLanguagesNumb:number[]
     }
 }
 function RightSection({chartData}:RightSectionArg) {
-    
     return(
         <section className="sectionRight">
             <div className="SectionDivisior">
-                <PieChart labels={chartData.arryLanguages} datanums={chartData.arryLanguagesNumb} />
+                <SectionSkill labels={chartData.arryLanguages} />
                 <DivFutProy />
             </div>
             <div className="SectionDivisior">

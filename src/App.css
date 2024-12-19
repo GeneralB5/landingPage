@@ -533,23 +533,34 @@ transition: all 0.25s ease-out;
   justify-content: flex-start;  
 }
 .divContainerFutPro h2{
+  text-align: center;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 .divSeparadores{
-  width: 100%;
+  width: 320px;
   height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   
 }
+.divSeparadores::after{
+  content: "";
+    height: 60px;
+    background-color: #ba3fd3;
+    width: 1px;
+    box-shadow: -3px 0 10px 2px #ea00ff8a;
+}
 .divSeparadores p{
+  width: 175px;
   text-transform: uppercase;
-  font-size: larger;
+  font-size: medium;
   font-weight: 500;
 }
-
+.imgContainerFuture{
+  width: 100px;
+}
 /* h1 principal*/
 .staticDivH1{
   position: absolute;
@@ -637,7 +648,7 @@ transition: all 0.25s ease-out;
   font-size: 23px;
 }
 .staticDivH1 {
-  transform: translateY(-15px) translateX(138px);
+  transform: translateY(-14px) translateX(138px);
 }
 .sectionRight{
   flex-direction: column;
@@ -645,6 +656,7 @@ transition: all 0.25s ease-out;
   width: max-content;
   padding: 0px;
   height: max-content;
+  background-color: transparent;
 }
 .themedDivs{
   padding: 0;
@@ -656,7 +668,16 @@ footer h3{
 }
 
 /* dark mode */
-
 @media (prefers-color-scheme: dark) {
-  
+  .profileContainer{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 25px 15px inset;
+  }
+}
+
+.imgMostUsed{
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  filter: drop-shadow(whitesmoke 0 0 2px);
+  /* checkear */
 }

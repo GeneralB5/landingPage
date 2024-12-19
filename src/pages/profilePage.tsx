@@ -8,15 +8,13 @@ import H1Principal from "../componentes/main/h1Principal/h1Principla.tsx"
 interface chartDataArguments{
     arrayThreeLatestProy:any[]
     arryLanguages:string[]
-    arryLanguagesNumb:number[]
 }
 
 function ProfilePage({}){
     const [user,setUser]= useState()
     const [chartData,setChartData]= useState<chartDataArguments | null>({
         arrayThreeLatestProy:[],
-        arryLanguages:[],
-        arryLanguagesNumb:[]})
+        arryLanguages:[]})
     const [Loading,setLoading]=useState(true)
     useEffect(()=>{
         setLoading(true)
