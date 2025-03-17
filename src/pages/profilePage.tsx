@@ -28,7 +28,7 @@ function ProfilePage({}){
             }
     
     funcionUser()
-    setTimeout(()=>setLoading(false),1500)
+    setTimeout(()=>setLoading(false),2000)
     },[])
     if(Loading == true || !user || !chartData) return <LoadingDots />
     return(

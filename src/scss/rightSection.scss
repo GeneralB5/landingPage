@@ -1,0 +1,226 @@
+/* Right section */
+.sectionRight{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 700px;
+    padding: 10px;
+    background-color: var(--main-color);
+    height: 600px;
+    border-radius: 15px;
+    
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 16px 3px inset;
+  }
+  
+  .SectionDivisior{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  
+  .themedDivs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    padding: 10px;
+    height: max-content;
+    
+    border-radius: 10px;
+    box-shadow: rgba(255, 255, 255, 0.082) 0px 4px 12px;
+  }
+  
+  /* TESTING */
+  .DivThreeNewest{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: 400px;
+    background-color: #E3E4DB;
+    color: #0000ffc4;
+  }
+  
+  .divNewGeneBorder::before{
+    content: "";
+    height: 60px;
+    background-color: #5D3FD3;
+    width: 1px;
+    box-shadow: 3px 0 10px 2px #0000ff8a;
+  }
+  .ColorLan-javascript{
+    color: #ffa500;
+  }
+  .ColorLan-csharp{
+    color: #8c00ff;
+  }
+  .ColorLan-typescript{
+    color: #008000;
+  }
+  .ColorLan-html{
+    color: #ff0000;
+  }
+  /* Div Future */
+  .iconStyleFuture{
+    height: 50px;
+    width: 50px;
+  }
+  .divFutureProy{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;  
+  }
+  .divContainerFutPro h2{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .divSeparadores{
+    width: 320px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+  }
+  .divSeparadores::after{
+    content: "";
+      height: 60px;
+      background-color: #ba3fd3;
+      width: 1px;
+      box-shadow: -3px 0 10px 2px #ea00ff8a;
+  }
+  .divSeparadores p{
+    width: 175px;
+    text-transform: uppercase;
+    font-size: medium;
+    font-weight: 500;
+  }
+  .imgContainerFuture{
+    width: 100px;
+  }
+  /* h1 principal*/
+  .staticDivH1{
+    position: absolute;
+    transform: translateY(-32px) translateX(270px);
+  }
+  .H1estatico{
+    width: max-content;
+    position: absolute;
+    left: 0;
+    font-size: 50px;
+  }
+  .PH1estatico{
+    font-weight: 700;
+    position: absolute;  
+    transform: translateX(20px);
+    font-size: 50px;
+  }
+  /* other social media */
+  .color-gmail{
+    --color-background: rgba(255, 0, 0, 0.830);
+    --color-shadow: red 0px 2px 8px 1px;
+  }
+  .color-instagram{
+    --color-background: rgba(255, 0, 212, 0.83);
+    --color-shadow: rgb(247, 0, 255) 0px 2px 8px 1px;
+  }
+  .aOtherSocialNet{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(211, 211, 211);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 1px;
+    transition: 0.50s;
+    will-change: auto;
+  }
+  .aOtherSocialNet img{
+    transition: 0.50s;
+    will-change: auto;
+  }
+  .aOtherSocialNet:hover{ 
+    background-color: var(--color-background);
+    box-shadow: var(--color-shadow)
+  }
+  .aOtherSocialNet:hover img{
+    filter: invert(1);
+  }
+  .divOtherSocialNet{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    transform: translateY(-10px);
+  }
+  @media (max-width:1100px) {
+    header{
+      justify-content: space-between;
+    }
+    main{
+      flex-direction: column;
+      justify-content:normal;
+      height: 1950px;    
+      gap: 100px;
+    }
+    .DivHeaderInside{
+      width: 230px;
+    }
+   .DivHeaderInside h2{
+    font-size: 17px;
+   } 
+   .RocketIMG{
+    margin: auto 0;
+   }
+   /* main */
+   .MainProfile{
+    gap: 10px;
+    flex-direction: column;
+   }
+   .H1estatico{  
+    font-size: 23px;
+  }
+  .PH1estatico{  
+    font-size: 23px;
+  }
+  .staticDivH1 {
+    transform: translateY(-14px) translateX(138px);
+  }
+  .sectionRight{
+    flex-direction: column;
+    gap: 10px;  
+    width: max-content;
+    padding: 0px;
+    height: max-content;
+    background-color: transparent;
+  }
+  .themedDivs{
+    padding: 0;
+  }
+  /* footer */
+  footer h3{
+    font-size: 10px;
+  }
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    .profileContainer{
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 25px 15px inset;
+    }
+  }
+  
+  .imgMostUsed{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    filter: drop-shadow(whitesmoke 0 0 2px);
+  }
